@@ -1,46 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Image Carousel</title>
-  </head>
-  <body>
-    <div class="carousel">
-      <div class="image-container" id="imgs">
-        <img
-        src="https://www.aulafacil.com/uploads/cursos/4551/editor/020514.es.jpg"
-        alt="zero - image"
-        />
-        <img src="https://cdn.ethic.es/wp-content/uploads/2022/06/Copia-de-image-7.jpg"
-       alt="first-image"
-       />
-    <img
-       src="https://i0.wp.com/www.vozactual.com/wp-content/uploads/2021/10/Portada.png?resize=800%2C445&ssl=1"
-       alt="second-image"
-       />
-       <img
-       src="https://imágenesdeamor.net/wp-content/uploads/2016/02/te-heche-de-menos-dejaste-mi-corazon-300x225.jpg"
-       alt="third-image"
-       />
-    <img
-       src="https://i1.wp.com/www.vozactual.com/wp-content/uploads/2021/10/Soledad-y-solitariedad.png?w=1462&ssl=1"
-       alt="fourth-image"
-       />
-       <img
-       src="https://fjuargentina.com/wp-content/uploads/2020/12/127218195_217226243097577_4189175583804304358_o.jpg"
-       alt="fifth - image"
-       />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>pasapalabra</title>
+</head>
+<body>
+    <section id="pantalla-inicial">
+        <h1>pasapalabra</h1>
+        <button id="comenzar">comenzarjuego</button>
+    </section>
 
-      </div>
+    <!---seccion del juego-->
 
-      <div class="buttons-container">
-        <button id="left" class="btn">Prev</button>
-        <button id="right" class="btn">Next</button>
-      </div>
-    </div>
-
+<section id="pantalla-juego">
+    <!---aqui se generan de forma dinamica las letras---> 
+        <div class="container">
+            <span id="tiempo">60</span>
+        </div>
+        <div class="contenedor-pregunta">
+            <span id="letra-pregunta">z</span>
+            <h2 id="pregunta">esta es la pregunta...</h2>
+            <input type="text" id="respuesta">
+            <div class="botones">
+                <button id="responder">responder</button>
+                <button id="pasar">pasa palabra</button>
+            </div>
+        </div>
+</section>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
